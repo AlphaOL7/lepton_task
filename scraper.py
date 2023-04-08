@@ -44,7 +44,7 @@ async def scrape(url):
             try:
                 storename=soup.find('h4').text.replace(':-','').strip()
             except:
-                print("storename not found for ",url)
+#                 print("storename not found for ",url)
                 return
 
             for l in soup.find_all('div',{'class':'add'}):
